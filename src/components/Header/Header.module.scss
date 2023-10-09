@@ -1,0 +1,105 @@
+@import "../../assets/styles/vars.scss";
+@import "../../assets/styles/mixins.sass";
+
+.header {
+  position: sticky;
+  top: 0;
+  min-width: 320px;
+  height: 56px;
+  background-color: $green_deep;
+  box-shadow: rgba(101, 131, 97, 0.1) 0px 4px 30px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 1520px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  @include xs {
+    padding: 0 20px;
+  }
+
+  @include xxs {
+    padding: 0 10px;
+  }
+}
+
+.header__logo {
+  flex-shrink: 0;
+  flex-grow: 0;
+  display: flex;
+  align-items: center;
+  gap: 0 4px;
+
+  svg {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+
+  @include xs {
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.header__title {
+  position: relative;
+  top: 5px;
+  font-size: 18px;
+  font-family: $font_logo;
+  color: $yellow_deep;
+  -webkit-text-stroke: 1px $red_deep;
+  text-stroke: 1px $red_deep;
+
+  @include xs {
+    font-size: 12px;
+  }
+}
+
+.header__btn {
+  flex-shrink: 0;
+  flex-grow: 0;
+  min-width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 7px;
+  padding: 8px 10px;
+  border: 2px solid $yellow_deep;
+  border-radius: 40px;
+  background-color: $green_dark;
+  color: $yellow_deep;
+  transition: background-color 0.2s ease-out;
+
+  &:hover {
+    background-color: $green_dark_hover;
+  }
+}
+
+.header__line {
+  width: 2px;
+  height: 15px;
+  background-color: $yellow_deep;
+}
+
+.header__total,
+.header__cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__cart {
+  svg {
+    margin-right: 4px;
+  }
+}
