@@ -5,8 +5,7 @@
   position: sticky;
   top: 0;
   min-width: 320px;
-  height: 56px;
-  // background-color: $green_deep;
+  height: 58px;
   background-color: var(--green_deep, #658361);
   box-shadow: rgba(101, 131, 97, 0.1) 0px 4px 30px;
 }
@@ -44,14 +43,14 @@
     display: block;
     // width: 100%;
     height: auto;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
 
   @include xs {
     svg {
-      width: 32px;
-      height: 32px;
+      width: 40px;
+      height: 40px;
     }
   }
 }
@@ -62,7 +61,7 @@
   font-size: 18px;
   font-family: var(--font_logo, "Order Pizza", sans-serif);
   color: var(--yellow_deep, #f9de79);
-  -webkit-text-stroke: 1px var(--red_deep, #a61403);
+  // -webkit-text-stroke: 1px var(--red_deep, #a61403);
   // text-stroke: 1px var(--red_deep, #a61403);
 
   @include xs {
@@ -78,14 +77,14 @@
   justify-content: center;
   align-items: center;
   gap: 0 7px;
-  padding: 8px 10px;
+  padding: 12px 12px;
   border-radius: 40px;
   background-color: var(--yellow_deep, #f9de79);
   color: var(--green_dark, #303e27);
   transition: background-color 0.2s ease-out;
 
   &:hover {
-    background-color: #f7d558;
+    background-color: var(--yellow_deep_hover, #f7d558);
   }
 }
 

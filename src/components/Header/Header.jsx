@@ -14,7 +14,7 @@ export const Header = () => {
           <h1 className={style.header__title}>Tasty Pizza</h1>
         </div>
         <button className={style.header__btn}>
-          <span className={style.header__total}>0 ₽</span>
+          <span className={style.header__total}>$0</span>
           <span className={style.header__line}></span>
           <span className={style.header__cart}>
             <IconCart /> 0

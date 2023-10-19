@@ -15,12 +15,11 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  // font-family: "Montserrat", sans-serif;
+  font-family: var(--font_nunito, "Nunito Sans", Arial, Helvetica, sans-serif);
   color: #000;
-  background-color: #fff;
+  background-color: var(--green_body, #f6fadd);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  // overflow-x: hidden;
 }
 
 body.noscroll {
