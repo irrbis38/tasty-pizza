@@ -6,7 +6,8 @@
   top: 0;
   min-width: 320px;
   height: 56px;
-  background-color: $green_deep;
+  // background-color: $green_deep;
+  background-color: var(--green_deep, #658361);
   box-shadow: rgba(101, 131, 97, 0.1) 0px 4px 30px;
 }
 
@@ -31,7 +32,7 @@
 }
 
 .header__logo {
-  width: 80px;
+  // width: 80px;
 
   flex-shrink: 0;
   flex-grow: 0;
@@ -41,28 +42,28 @@
 
   svg {
     display: block;
-    width: 100%;
+    // width: 100%;
     height: auto;
-    // width: 40px;
-    // height: 40px;
+    width: 40px;
+    height: 40px;
   }
 
-  // @include xs {
-  //   svg {
-  //     // width: 32px;
-  //     // height: 32px;
-  //   }
-  // }
+  @include xs {
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
 }
 
 .header__title {
   position: relative;
   top: 5px;
   font-size: 18px;
-  font-family: $font_logo;
-  color: $yellow_deep;
-  -webkit-text-stroke: 1px $red_deep;
-  text-stroke: 1px $red_deep;
+  font-family: var(--font_logo, "Order Pizza", sans-serif);
+  color: var(--yellow_deep, #f9de79);
+  -webkit-text-stroke: 1px var(--red_deep, #a61403);
+  // text-stroke: 1px var(--red_deep, #a61403);
 
   @include xs {
     font-size: 12px;
@@ -78,21 +79,20 @@
   align-items: center;
   gap: 0 7px;
   padding: 8px 10px;
-  border: 2px solid $yellow_deep;
   border-radius: 40px;
-  background-color: $green_dark;
-  color: $yellow_deep;
+  background-color: var(--yellow_deep, #f9de79);
+  color: var(--green_dark, #303e27);
   transition: background-color 0.2s ease-out;
 
   &:hover {
-    background-color: $green_dark_hover;
+    background-color: #f7d558;
   }
 }
 
 .header__line {
-  width: 2px;
-  height: 15px;
-  background-color: $yellow_deep;
+  width: 1px;
+  height: 21px;
+  background-color: var(--red_deep, #a61403);
 }
 
 .header__total,
