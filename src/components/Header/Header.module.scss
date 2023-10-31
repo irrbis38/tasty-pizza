@@ -5,7 +5,7 @@
   position: sticky;
   top: 0;
   min-width: 320px;
-  height: 58px;
+  height: 70px;
   background-color: var(--green_deep, #658361);
   box-shadow: rgba(101, 131, 97, 0.1) 0px 4px 30px;
 }
@@ -20,6 +20,7 @@
   min-width: 320px;
   margin: 0 auto;
   padding: 0 15px;
+  padding-left: 40px;
 
   @include xs {
     padding: 0 10px;
@@ -27,38 +28,48 @@
 }
 
 .header__logo {
-  // width: 80px;
-
+  position: relative;
+  flex-shrink: 0;
+  flex-grow: 0;
   flex-shrink: 0;
   flex-grow: 0;
   display: flex;
   align-items: center;
-  gap: 0 4px;
+  gap: 0 5px;
 
-  svg {
+  img {
     display: block;
-    // width: 100%;
+    width: 100%;
     height: auto;
-    width: 50px;
-    height: 50px;
   }
+}
 
-  @include xs {
-    svg {
-      width: 40px;
-      height: 40px;
-    }
+.header__img {
+  width: 55px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }
 
 .header__title {
   position: relative;
   top: 5px;
-  font-size: 18px;
-  font-family: var(--font_logo, "Order Pizza", sans-serif);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--font_oswald, "Oswald", sans-serif);
+
   color: var(--yellow_deep, #f9de79);
-  // -webkit-text-stroke: 1px var(--red_deep, #a61403);
-  // text-stroke: 1px var(--red_deep, #a61403);
+
+  span:first-child {
+    display: inline-block;
+    margin-bottom: 3px;
+    font-size: 18px;
+    font-family: var(--font_logo, "Order Pizza", sans-serif);
+    color: var(--red_deep, #a61403);
+  }
 
   @include xs {
     font-size: 12px;
