@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Sort } from "../Sort/Sort";
+import { Search } from "../Search/Search";
 
 import style from "./Panel.module.scss";
 
@@ -10,7 +11,7 @@ export const Panel = () => {
       <div className="container">
         <div className={style.panel__wrapper}>
           <Sort />
-          <div className={style.panel__search}>search</div>
+          <Search />
         </div>
       </div>
     </div>
