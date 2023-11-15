@@ -36,6 +36,10 @@ body.noscroll {
   @include xs {
     padding: 0 20px;
   }
+
+  @include xxs {
+    padding: 0 10px;
+  }
 }
 
 a {

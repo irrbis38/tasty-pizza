@@ -7,6 +7,6 @@ import style from "./Search.module.scss";
 export const Search = () => (
   <label className={style.search}>
     <IconSearch />
-    <input className={style.search__input} type="text" />
+    <input className={style.search__input} type="text" placeholder="Search pizza..." />
   </label>
 );

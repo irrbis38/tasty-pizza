@@ -1,3 +1,6 @@
+@import "../../assets/styles/vars.scss";
+@import "../../assets/styles/mixins.sass";
+
 .panel {
   padding-top: 12px;
 }
@@ -6,5 +9,5 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }

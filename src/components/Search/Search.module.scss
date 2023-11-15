@@ -1,0 +1,37 @@
+@import "../../assets/styles/vars.scss";
+@import "../../assets/styles/mixins.sass";
+
+.search {
+  position: relative;
+  width: 40%;
+  max-width: 300px;
+
+  svg:nth-child(1) {
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%);
+    width: 24px;
+    height: auto;
+  }
+
+  // @include xxs {
+  //   width: 100%;
+  //   max-width: 100%;
+  //   order: 1;
+  //   margin-bottom: 20px;
+  // }
+}
+
+.search__input {
+  display: block;
+  width: 100%;
+  padding: 5px 32px 5px 10px;
+  border-radius: 8px;
+
+  &:focus {
+    background-color: var(--white, #f8fae4);
+    box-shadow: 0 0 10px 0 var(--green_dark, #303e27);
+  }
+}
