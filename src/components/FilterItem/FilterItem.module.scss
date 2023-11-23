@@ -1,0 +1,21 @@
+@import "../../assets/styles/vars.scss";
+@import "../../assets/styles/mixins.sass";
+
+.filter__btn {
+  padding: 10px 18px;
+  background-color: var(--green_light, #d0dd97);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--green_light_hover, #b4bb72);
+    }
+  }
+
+  &.active {
+    color: var(--white, #f8fae4);
+    background-color: var(--green_light_active, #939b4b);
+  }
+}
