@@ -4,6 +4,10 @@
 .panel {
   margin-bottom: 12px;
   padding-top: 12px;
+
+  @include xxs {
+    margin-bottom: 18px;
+  }
 }
 
 .panel__wrapper {
@@ -11,4 +15,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include xxs {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
 }

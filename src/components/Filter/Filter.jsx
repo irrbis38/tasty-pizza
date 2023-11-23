@@ -14,7 +14,7 @@ export const Filter = () => {
 
   return (
     <div className={style.filter}>
-      <div className="container">
+      <div className={style.container}>
         <div className={style.filter__wrapper}>
           <ul className={style.filter__list}>
             {filters.map((filter) => (
